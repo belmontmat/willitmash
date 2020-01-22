@@ -8,25 +8,33 @@
   </head>
   <body>
     <header>
-      <button id="home">home</button>
-      <nav>
-
-      </nav>
+      <a href="index.html"><img src="icons/logo.png" alt="will-it-mash logo"></a>
     </header>
     <main>
-      <h1>Will-It-Mash</h1>
-      <section id = "description">
-        <p>Will-It-Mash takes two songs and using the information obtained through Spotify audio analysis API determines if the songs will mash up well. Maybe use the Web Playback SDK to play both songs at once.</p>
-      </section>
-      <section id = "inputs">
-        <label for="song1">Song 1: </label>
-        <!-- add values for songs that do work when i find them -->
-        <input type="text" id="song1" name="song2" value="">
-        <label for="song2">Song 2: </label>
-        <input type="text" name="song2" id="song2" value="">
-        <button type="button" id="search">Search</button>
-      </section>
+        <img id="left-img" src="icons/blue-stage.jpg" alt="blue stage">
+        <div id="right">
+          <div id = "description">
+            <p>Will-It-Mash takes two songs and using the information obtained through Spotify audio analysis API determines if the songs will mash up well. Maybe use the Web Playback SDK to play both songs at once.</p>
+          </div>
+          <div id= "inputs">
+            <div class="form">
+              <label for="song1">Song 1: </label>
+              <!-- add values for songs that do work when i find them -->
+              <input type="text" id="song1" name="song2" value="">
+            </div>
+            <div class="form">
+              <label for="song2">Song 2: </label>
+              <input type="text" name="song2" id="song2" value="">
+            </div>
+            <button type="button" id="search">Search</button>
+          </div>
+          <div id="outputs">
+            <p>Yes/No</p>
+          </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>This website was made by Mathew Belmont and uses the Spotify Web API</p>
+    </footer>
   </body>
 </html>
