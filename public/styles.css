@@ -33,8 +33,15 @@ main {
 #description {
   height: 20%;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 1%;
   background-color: #1b142e;
+}
+
+#description p {
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
 }
 
 #left-img {
@@ -54,8 +61,8 @@ main {
 
 footer {
   text-align: center;
-  font-size: 1vw;
-  padding-top: 3%;
+  font-size: 0.75vw;
+  padding-bottom: 1%;
   height: 5%;
 }
 
@@ -84,7 +91,7 @@ header, footer {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .form {
