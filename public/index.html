@@ -14,24 +14,65 @@
         <img id="left-img" src="icons/blue-stage.jpg" alt="blue stage">
         <div id="right">
           <div id = "description">
+            <h2>How To Use:</h2>
             <p>Will-It-Mash takes two songs and using the information obtained through Spotify audio analysis API determines if the songs will mash up well. Maybe use the Web Playback SDK to play both songs at once.</p>
           </div>
           <div id= "inputs">
-            <div class="form">
-              <label for="song1">Song 1: </label>
-              <!-- add values for songs that do work when i find them -->
-              <input type="text" id="song1" name="song2" value="">
+            <div class="song">
+              <div class="form">
+                <label for="song1">Song 1: </label>
+                <!-- add values for songs that do work when i find them -->
+                <input type="text" id="song1" name="song2" value="">
+              </div>
+              <div class="form">
+                <label for="song1artist">By: </label>
+                <input type="text" name="song1artist" id="song1artist" value="">
+              </div>
             </div>
-            <div class="form">
-              <label for="song2">Song 2: </label>
-              <input type="text" name="song2" id="song2" value="">
+            <div class="song">
+              <div class="form">
+                <label for="song2">Song 2: </label>
+                <input type="text" name="song2" id="song2" value="">
+              </div>
+              <div class="form">
+                <label for="song2artist">By:</label>
+                <input type="text" name="song2artist" id="song2artist" value="">
+            </div>
             </div>
             <button type="button" id="search">Search</button>
           </div>
           <div id="outputs">
-            <p>Yes/No</p>
+            <div id="songs">
+              <div class="songstats">
+                <h3>SONG 1</h3>
+                <h4>BY</h4>
+                <img src="" alt="song 1 art">
+                <h5>ALBUM</h5>
+                <ul>
+                  <li>SECTION:</li>
+                  <li>BPM:</li>
+                  <li>KEY:</li>
+                  <li>TIMESIGNATURE:</li>
+                </ul>
+              </div>
+              <div class="songstats">
+                <h3>SONG 2</h3>
+                <h4>BY</h4>
+                <img src="" alt="song 1 art">
+                <h5>ALBUM</h5>
+                <ul>
+                  <li>SECTION:</li>
+                  <li>BPM:</li>
+                  <li>KEY:</li>
+                  <li>TIMESIGNATURE:</li>
+                </ul>
+            </div>
           </div>
+        <div id="related">
+           <h3>Other Songs That Match</h3>
         </div>
+        </div>
+      </div>
     </main>
     <footer>
       <p>This website was made by Mathew Belmont and uses the Spotify Web API</p>
